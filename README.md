@@ -11,7 +11,7 @@
   "tasks": [],
   "emails": [],
   "members": [],
-  "isValidate"{}
+  "validate":{}
 }
 ```
 
@@ -21,7 +21,7 @@
 ```json
 {
   "task": "String",
-  "status": boolean,
+  "status": true,
 }
 ```
 
@@ -38,7 +38,7 @@
 
 ```json
 {
-
+  
 }
 ```
 
@@ -46,6 +46,6 @@
 
 ```json
 {
-
+  "isValidate":true
 }
 ```
