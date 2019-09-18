@@ -9,7 +9,7 @@
 ```json
 {
   "tasks": [],
-  "emails": [],
+  "emails": {},
   "members": [],
   "validate":{}
 }
@@ -29,7 +29,7 @@
 
 ```json
 {
-  "firstNaem": "String",
+  "firstName": "String",
   "lastName": "String",
   "role": "String"
 }
@@ -38,7 +38,7 @@
 
 ```json
 {
-  
+  "notify":{}
 }
 ```
 
