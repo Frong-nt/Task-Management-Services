@@ -31,7 +31,8 @@
 {
   "firstName": "String",
   "lastName": "String",
-  "role": "String"
+  "role": "String",
+  "email":"String"
 }
 ```
 ### Email Service
