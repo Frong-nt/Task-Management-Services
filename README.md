@@ -99,3 +99,11 @@
   "isValidate":true
 }
 ```
+
+## Member group
+|   | ชื่อ  | นามสกุล  | GitHub username  | รหัสนักศึกษา  | หน้าที่  |
+|---|---|---|---|---|---|
+|   | กวิสรา  | บัณเย็น  | zelotype  | 60070002  | Developer  |
+|   | คาซูยา | โคมัทซึ  | yakung  | 60070007  | Developer  |
+|   |  ณัฐวุฒิ | เตชะศรีบูรพา  | Frong-nt  | 60070025  | Developer  |
+|   | ศุภกิตติ์  | รอดทอง  | KurokoChu  | 60070099  | Developer  |
