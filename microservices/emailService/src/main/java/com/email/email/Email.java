@@ -1,8 +1,9 @@
-package Model;
+package com.email.email;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.stereotype.Component;
 
 public class Email {
     String receiverEmail;
@@ -42,26 +43,9 @@ public class Email {
         this.senderName = senderName;
     }
 
-    @Autowired
-    private JavaMailSender javaMailSender;
-
-    public void sendMail(String receiverEmail, String receiverName, String senderName) {
-
-        System.out.println("Sending Email...");
-
-        SimpleMailMessage msg = new SimpleMailMessage();
-        msg.setTo(receiverEmail);
-
-        msg.setSubject("Notification from" + senderName);
-        msg.setText("Hello, " + receiverName+ " " + senderName + "have already complete the task! please check out !");
-
-        try {
-            javaMailSender.send(msg);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        System.out.println("Complete");
-
+    @Override
+    public String toString() {
+        return getReceiverEmail() + " " + getReceiverName() + " " + getSenderName();
     }
+
 }
