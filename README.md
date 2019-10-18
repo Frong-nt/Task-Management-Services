@@ -99,6 +99,25 @@
   "isValidate":true
 }
 ```
+### Topic Service
+
+```json
+{
+"taskID": "00",
+"comments": [
+    {
+    "msg": "text",
+    "by": "text",
+    "dateTime": "text"
+    },
+    {
+    "msg": "text",
+    "by": "text",
+    "dateTime": "text"
+    }
+  ]
+}
+```
 
 ## Member group
 |   | ชื่อ  | นามสกุล  | GitHub username  | รหัสนักศึกษา  | หน้าที่  |
