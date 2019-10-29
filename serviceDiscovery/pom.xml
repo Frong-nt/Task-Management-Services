@@ -8,11 +8,12 @@
         <version>2.1.9.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>sop.week8</groupId>
-    <artifactId>eureka</artifactId>
+    <groupId>discovery</groupId>
+    <artifactId>main</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eureka</name>
-    <description>SOP week 8</description>
+    <name>main</name>
+    <description>Demo project for Spring Boot</description>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -45,8 +46,12 @@
             <artifactId>spring-cloud-starter-eureka-server</artifactId>
             <version>1.4.7.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-
 
     <build>
         <plugins>
