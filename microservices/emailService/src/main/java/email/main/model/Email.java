@@ -23,8 +23,8 @@ public class Email {
         return taskName;
     }
 
-    public String getMessage(Email email) {
-        return taskName + "has already successful.";
+    public String getMessage() {
+        return taskName + " has already successful.";
     }
 
 }
