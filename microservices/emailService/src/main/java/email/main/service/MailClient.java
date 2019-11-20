@@ -23,12 +23,12 @@ public class MailClient {
         this.emailContentBuilder = emailContentBuilder;
     }
 
-    public void prepareAndSend(String recipient, String message){
+    public void prepareAndSend(String[] recipient, String message){
         MimeMessagePreparator messagePreparator = mimeMessage -> {
             MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage
                     ,MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED,
                     StandardCharsets.UTF_8.name());
-            messageHelper.setFrom("task.sop2019@gmail.com");
+            messageHelper.setFrom("no-reply@task.com");
             messageHelper.setTo(recipient);
             messageHelper.setSubject("Notification alert");
             String content = emailContentBuilder.build(message);

@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{classpath:templates/static/css/style.css}">
-</head>
-<body>
-    <img src='https://drive.google.com/uc?export=view&id=1GW-eXVLwn0BMw2jz6sUyt81eLHNK6q0t' alt="Logo" title="Bell" style="display: block;" width="200" height="87">
-    <span th:text="${message}"></span>
-</body>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body style="margin: 0px !important;display: grid;">
+    <div
+      style="background: #36D1DC;
+      background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+      background: linear-gradient(to right, #5B86E5, #36D1DC);
+      text-align: center;
+      height: 100vh;"
+    >
+      <img
+        src="https://drive.google.com/uc?export=view&id=1mU3ELBaQJnat1wMcCC-Fyg_4Ey9a6W3m"
+        alt="Logo"
+        title="Bell"
+        style="display: block;margin-left: auto;margin-right: auto; margin-top: 2%;"
+        width="100"
+        height="100"
+      />
+      <h1
+        style="font-size: large;
+      text-align: center;
+      color: white;"
+      >
+        You get new notification!
+      </h1>
+      <div style="margin-left: auto;margin-right: auto;padding-bottom: 8%;">
+        <span
+          th:text="${message}"
+          style="height: 100px;
+        background: white;
+        border-radius: 0.25rem;
+        width: 70%;
+        padding-top: 2%;
+        display: inline-block;"
+        ></span>
+      </div>
+    </div>
+  </body>
 </html>

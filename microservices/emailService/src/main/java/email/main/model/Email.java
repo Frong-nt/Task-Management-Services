@@ -1,22 +1,32 @@
 package email.main.model;
 
 public class Email {
-    String recipientName;
+    String[] recipientEmail;
     String taskName;
+    String listName;
 
     public Email(){}
 
-    public Email(String recipientName, String taskName) {
-        this.recipientName = recipientName;
+    public String getListName() {
+        return listName;
+    }
+
+    public void setListName(String listName) {
+        this.listName = listName;
+    }
+
+    public Email(String[] recipientEmail, String taskName, String listName) {
+        this.recipientEmail = recipientEmail;
         this.taskName = taskName;
+        this.listName = listName;
     }
 
-    public String getRecipientName() {
-        return recipientName;
+    public String[] getRecipientEmail() {
+        return recipientEmail;
     }
 
-    public void setRecipientName(String recipientName) {
-        this.recipientName = recipientName;
+    public void setRecipientEmail(String[] recipientEmail) {
+        this.recipientEmail = recipientEmail;
     }
 
     public String getTaskName() {
@@ -24,7 +34,7 @@ public class Email {
     }
 
     public String getMessage() {
-        return taskName + " has already successful.";
+        return taskName + " has changed status to " + listName + ".";
     }
 
 }

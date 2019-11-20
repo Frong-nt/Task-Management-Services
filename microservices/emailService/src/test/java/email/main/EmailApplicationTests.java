@@ -33,7 +33,7 @@ class EmailApplicationTests {
     @Test
     public void shouldSendMail() throws Exception {
         //given
-        String recipient = "60070002@kmitl.ac.th";
+        String[] recipient = {"60070002@kmitl.ac.th"};
         String message = "Project successfully";
         //when
         mailClient.prepareAndSend(recipient, message);
