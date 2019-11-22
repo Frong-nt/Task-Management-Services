@@ -18,21 +18,21 @@ public class TopicController {
     public List<Topic> home(){
         return repository.findAll();
     }
-    @RequestMapping(value = "/{taskID}")
-    public Topic get(@PathVariable("taskID") String taskID) {
-        return this.repository.findByTaskID(taskID);
+    @RequestMapping(value = "/{issueID}")
+    public Topic get(@PathVariable("issueID") String taskID) {
+        return this.repository.findByIssueID(taskID);
     }
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public ResponseEntity<List<Topic>> insertTopic(@RequestBody Topic topic) {
         this.repository.insert(topic);
         return new ResponseEntity<List<Topic>>(this.repository.findAll(), HttpStatus.OK);
     }
-    @RequestMapping(value = "/{taskID}", method = RequestMethod.PUT)
-    public ResponseEntity<List<Topic>> modifyPetByTaskID(@PathVariable("taskID") String taskID, @Valid @RequestBody Topic topic) {
+    @RequestMapping(value = "/{issueID}", method = RequestMethod.PUT)
+    public ResponseEntity<List<Topic>> modifyByIssueID(@PathVariable("issueID") String issueID, @Valid @RequestBody Topic topic) {
         List<Topic> topics = this.repository.findAll();
         for(int i=0;i<topics.size();i++){
-            if(topics.get(i).getTaskID().equals(taskID)){
-                topics.get(i).setComments(topic.getComments());
+            if(topics.get(i).getIssueID().equals(issueID)){
+                topics.get(i).setAtri(topic);
                 this.repository.saveAll(topics);
                 break;
             }
@@ -41,9 +41,9 @@ public class TopicController {
 
     }
 
-    @RequestMapping(value = "/{taskID}", method = RequestMethod.DELETE)
-    public  ResponseEntity<List<Topic>> deleteTopic(@PathVariable String taskID) {
-        repository.delete(repository.findByTaskID(taskID));
+    @RequestMapping(value = "/{issueID}", method = RequestMethod.DELETE)
+    public  ResponseEntity<List<Topic>> deleteTopic(@PathVariable String issueID) {
+        repository.delete(repository.findByIssueID(issueID));
         return new ResponseEntity<List<Topic>>(this.repository.findAll(), HttpStatus.OK);
     }
 }
