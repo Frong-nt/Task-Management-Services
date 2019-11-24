@@ -97,4 +97,24 @@ public class Topic {
         this.dateTime = topic.dateTime;
         this.comments = topic.comments;
     }
+    public void insertComment(Comments comment){
+        this.comments.add(comment);
+    }
+    public void deleteComment(String id){
+        for(int i=0;i<comments.size();i++){
+            if(comments.get(i).getId().equals(id)){
+                comments.remove(i);
+            }
+        }
+    }
+    public void updateComment(String id, Comments comments){
+        for(int i=0;i<this.comments.size();i++){
+            if(this.comments.get(i).getId().equals(id)){
+                this.comments.get(i).setBy(comments.getBy());
+                this.comments.get(i).setMsg(comments.getMsg());
+                this.comments.get(i).setDateTime(comments.getDateTime());
+            }
+        }
+    }
+
 }

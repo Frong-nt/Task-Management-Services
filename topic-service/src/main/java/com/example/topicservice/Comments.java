@@ -5,21 +5,30 @@ import lombok.Data;
 import java.util.*;
 @Data
 public class Comments {
-    private String message, by, dateTime;
+    private String id;
+    private String msg, by, dateTime;
 
     public Comments(){}
-    public Comments(String message, String by, String dateTime) {
-        this.message = message;
+    public Comments(String msg, String by, String dateTime) {
+        this.msg = msg;
         this.by = by;
         this.dateTime = dateTime;
     }
 
-    public String getMsg() {
-        return message;
+    public String getId() {
+        return id;
     }
 
-    public void setMsg(String message) {
-        this.message = message;
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
     public String getBy() {
