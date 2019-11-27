@@ -75,12 +75,22 @@
 ```
 
 ### Member Service
+- GET /member/{firstname} ==> return firstname in database 
 
+- POST /member/update/{id} ==> Update id in database
+
+- POST /member/delete/{id} ==> Delete id in database
+
+- GET /members ==> get all member in database
+
+- POST /member/add ==> Create member in database 
+- body :
 ```json
 {
-  "firstName": "String",
+  "firstName" "String",
   "lastName": "String",
   "role": "String",
+  "hours":"String",
   "email":"String"
 }
 ```
