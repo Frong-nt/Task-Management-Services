@@ -149,7 +149,7 @@
       "comments":[ 
          { 
             "id": "1",
-            "message":"sorry but i dont knowssssss",
+            "msg":"sorry but i dont knowssssss",
             "by":"somebody",
             "dateTime":"2019-11-23T04:22:57.339572 "
          }
@@ -169,7 +169,7 @@
       "comments":[ 
          { 
             "id": "1",
-            "message":"sorry but i dont knowssssss",
+            "msg":"sorry but i dont knowssssss",
             "by":"somebody",
             "dateTime":"2019-11-23T04:22:57.339572 "
          }
@@ -202,7 +202,7 @@
 - POST /topic/{issueID}/     => insert comment
  ```json
   { 
-            "message":"sorry but i dont knowssssss",
+            "msg":"sorry but i dont knowssssss",
             "by":"somebody",
             "dateTime":"2019-11-23T04:22:57.339572 "
          }
@@ -211,7 +211,7 @@
 - PUT /topic/{issueID}/{id}      => update specific comment
  ```json
   { 
-            "message":"sorry but i dont knowssssss",
+            "msg":"sorry but i dont knowssssss",
             "by":"somebody",
             "dateTime":"2019-11-23T04:22:57.339572 "
          }
@@ -220,7 +220,7 @@
 - GET /topic/{issueID}/{id}     => return secific comment
  ```json
   { 
-            "message":"sorry but i dont knowssssss",
+            "msg":"sorry but i dont knowssssss",
             "by":"somebody",
             "dateTime":"2019-11-23T04:22:57.339572 "
          }
