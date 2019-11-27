@@ -17,6 +17,11 @@ public class ValidateTimeController {
         this.validateTimeService = validateTimeService;
     }
 
+    @GetMapping(value = "/hello")
+    public String hello(){
+        return "Hello!";
+    }
+
     @PostMapping(value = "/validateTime")
     public String validateTime(@RequestBody Time time){
         return validateTimeService.validate(time);
