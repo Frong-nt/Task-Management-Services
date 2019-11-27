@@ -1,7 +1,7 @@
 # Task-Management-Services
 
 ## Task Management Microservice Architecture
-<img src="Task Management Microservice Architecture.svg">
+<img src="Task Management Microservice Architecture.svg" width ="45%">
 
 ## Feature
 ### Task Service
@@ -28,6 +28,8 @@
 -	แสดงความคิดเห็นได้
 -	ลบความคิดเห็น
 -	แก้ไขความคิดเห็น
+### List Servicr
+### Borad Service
 
 ## Entity model
 ### Task
@@ -52,17 +54,6 @@
 -	ชื่อผู้แสดงความคิดเห็น
 
 
-## API
-### API GATEWAY
-
-```json
-{
-  "tasks": [],
-  "emails": {},
-  "members": [],
-  "validate":{}
-}
-```
 
 
 ### Task Service
