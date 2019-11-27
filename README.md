@@ -13,7 +13,7 @@
 -	เรียกดูงาน
 
 ### Email Service 
--	ส่งเมลแจ้งเตือน เมื่อสถานะ Task สำเร็จ
+-	ส่งเมลแจ้งเตือน เมื่อมีการเปลี่ยนสถานะของ Task
 
 ### Member Service
 -	เก็บข้อมูลผู้ใช่
@@ -22,7 +22,7 @@
 -	แก้ไขข้อมูลผู้ใช้
 
 ### Validate Working Time Service
--	ตรวจสอบชั่วโมงการทำงานของผู้ใช้
+-	ตรวจสอบชั่วโมงการทำงานของผู้ใช้ มีสองเคสในการตรวจสอบ เคสแรกคือตรวจสอบตามกฎหมายแรงงาน (ไม่เกิน 8 ชั่วโมงต่อวัน) และตรวจสอบตามที่ผู้ใช้เป็นคนกำหนดลิมิตการทำงานของตัวเอง
 
 ### Topic Service
 -	แสดงความคิดเห็นได้
@@ -116,18 +116,23 @@
 }
 ```
 ### Email Service
-
+- POST /email/send ==> send notification email
+- body
 ```json
 {
-  "notify":{}
+  "recipientName": ["String"], 
+  "taskName": "String", 
+  "ListName": "String"
 }
 ```
 
 ### Validation Service
-
+- POST /validateTime ==> validate time that user select task per day
+- body
 ```json
 {
-  "isValidate":true
+   "time": 0,
+   "individualTime": 0
 }
 ```
 ### Topic Service
