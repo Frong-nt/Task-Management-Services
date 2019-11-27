@@ -2,11 +2,11 @@ package sop.kawisara.validate.model;
 
 public class Time {
         int time;
-        int bossTime;
+        int individualTime;
 
-    public Time(int time, int bossTime) {
+    public Time(int time, int individualTime) {
         this.time = time;
-        this.bossTime = bossTime;
+        this.individualTime = individualTime;
     }
 
     public int getTime() {
@@ -17,12 +17,12 @@ public class Time {
         this.time = time;
     }
 
-    public int getBossTime() {
-        return bossTime;
+    public int getIndividualTime() {
+        return individualTime;
     }
 
-    public void setBossTime(int bossTime) {
-        this.bossTime = bossTime;
+    public void setIndividualTime(int individualTime) {
+        this.individualTime = individualTime;
     }
 
     public Time() {}
