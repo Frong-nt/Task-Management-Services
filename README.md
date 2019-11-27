@@ -76,12 +76,42 @@
 
 ### Member Service
 - GET /member/{firstname} ==> return firstname in database 
+```json
+{
+  "firstName" "String",
+  "lastName": "String",
+  "role": "String",
+  "hours":"String",
+  "email":"String"
+}
+```
 
 - POST /member/update/{id} ==> Update id in database
+```json
+{
+  "firstName" "String",
+  "lastName": "String",
+  "role": "String",
+  "hours":"String",
+  "email":"String"
+}
+```
 
 - POST /member/delete/{id} ==> Delete id in database
 
+
 - GET /members ==> get all member in database
+```json
+[
+  {
+    "firstName" "String",
+    "lastName": "String",
+    "role": "String",
+    "hours":"String",
+    "email":"String"
+  }
+]
+```
 
 - POST /member/add ==> Create member in database 
 - body
