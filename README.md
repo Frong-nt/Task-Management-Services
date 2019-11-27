@@ -84,7 +84,7 @@
 - GET /members ==> get all member in database
 
 - POST /member/add ==> Create member in database 
-- body :
+- body
 ```json
 {
   "firstName" "String",
