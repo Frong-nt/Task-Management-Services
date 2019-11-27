@@ -23,7 +23,8 @@ public class MailClient {
         this.emailContentBuilder = emailContentBuilder;
     }
 
-    public void prepareAndSend(String[] recipient, String message){
+    public String prepareAndSend(String[] recipient, String message){
+        String text;
         MimeMessagePreparator messagePreparator = mimeMessage -> {
             MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage
                     ,MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED,
@@ -36,9 +37,11 @@ public class MailClient {
         };
         try {
             mailSender.send(messagePreparator);
+            text = "Success";
         }
         catch (MailException e){
-            e.printStackTrace();
+            text = e.toString();
         }
+        return text;
     }
 }

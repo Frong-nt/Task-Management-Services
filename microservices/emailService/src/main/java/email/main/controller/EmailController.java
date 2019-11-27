@@ -18,8 +18,7 @@ public class EmailController {
     }
 
     @PostMapping(value = "/send")
-    public ResponseEntity<Email> send(@RequestBody Email email){
-        mailClient.prepareAndSend(email.getRecipientEmail(), email.getMessage());
-        return new ResponseEntity<Email>(email, HttpStatus.OK);
+    public String send(@RequestBody Email email){
+        return mailClient.prepareAndSend(email.getRecipientEmail(), email.getMessage());
     }
 }
