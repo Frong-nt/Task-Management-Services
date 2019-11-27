@@ -140,7 +140,7 @@
 }
 ```
 ### Topic Service
-
+- GET /topic/      => return all topic
 ```json
 [ 
    { 
@@ -161,6 +161,75 @@
    }
 ]
 ```
+- GET /topic/{issueID}     => return specific topic
+```json
+{ 
+      "issueID":"1",
+      "issueName":"need help pleassss",
+      "status":"pending",
+      "description":"My task is getiing error",
+      "by":"Someonee",
+      "dateTime":"2019-11-23T04:21:53.449987",
+      "comments":[ 
+         { 
+            "id": "1",
+            "message":"sorry but i dont knowssssss",
+            "by":"somebody",
+            "dateTime":"2019-11-23T04:22:57.339572 "
+         }
+      ]
+   }
+   ```
+- DELETE /topic/{issueID}
+- POST /topic/       => insert new topic
+```json
+ { 
+      "issueName":"need help pleassss",
+      "status":"pending",
+      "description":"My task is getiing error",
+      "by":"Someonee",
+      "dateTime":"2019-11-23T04:21:53.449987",
+      "comments":[]
+   }
+```
+ - PUT /topic/{issueID}    => update specific topic 
+ ```json
+ { 
+      "issueName":"need help pleassss",
+      "status":"pending",
+      "description":"My task is getiing error",
+      "by":"Someonee",
+      "dateTime":"2019-11-23T04:21:53.449987",
+      "comments":[]
+   }
+```
+- POST /topic/{issueID}/     => insert comment
+ ```json
+  { 
+            "message":"sorry but i dont knowssssss",
+            "by":"somebody",
+            "dateTime":"2019-11-23T04:22:57.339572 "
+         }
+```
+
+- PUT /topic/{issueID}/{id}      => update specific comment
+ ```json
+  { 
+            "message":"sorry but i dont knowssssss",
+            "by":"somebody",
+            "dateTime":"2019-11-23T04:22:57.339572 "
+         }
+```
+- DELETE /topic/{issueID}/{id}     => delete secific comment
+- GET /topic/{issueID}/{id}     => return secific comment
+ ```json
+  { 
+            "message":"sorry but i dont knowssssss",
+            "by":"somebody",
+            "dateTime":"2019-11-23T04:22:57.339572 "
+         }
+```
+
 
 ## Member group
 |   | ชื่อ  | นามสกุล  | GitHub username  | รหัสนักศึกษา  | หน้าที่  |
