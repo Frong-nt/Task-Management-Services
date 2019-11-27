@@ -78,7 +78,7 @@
 - GET /member/{firstname} ==> return firstname in database 
 ```json
 {
-  "firstName" "String",
+  "firstName":"String",
   "lastName": "String",
   "role": "String",
   "hours":"String",
@@ -89,7 +89,7 @@
 - POST /member/update/{id} ==> Update id in database
 ```json
 {
-  "firstName" "String",
+  "firstName":"String",
   "lastName": "String",
   "role": "String",
   "hours":"String",
@@ -104,7 +104,7 @@
 ```json
 [
   {
-    "firstName" "String",
+    "firstName":"String",
     "lastName": "String",
     "role": "String",
     "hours":"String",
@@ -117,7 +117,7 @@
 - body
 ```json
 {
-  "firstName" "String",
+  "firstName":"String",
   "lastName": "String",
   "role": "String",
   "hours":"String",
