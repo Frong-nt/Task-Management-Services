@@ -1,7 +1,7 @@
 # Task-Management-Services
 
 ## Task Management Microservice Architecture
-<img src="Task Management Microservice Architecture.svg" width ="45%">
+<img src="Task Management Microservice Architecture.svg" width ="75%">
 
 ## Feature
 ### Task Service
