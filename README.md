@@ -1,7 +1,7 @@
 # Task-Management-Services
 
 ## Task Management Microservice Architecture
-<img src="Task Management Microservice Architecture.svg" width ="75%">
+<img src="Task Management Microservice Architecture.svg" width ="85%">
 
 ## Feature
 ### Task Service
@@ -28,30 +28,11 @@
 -	แสดงความคิดเห็นได้
 -	ลบความคิดเห็น
 -	แก้ไขความคิดเห็น
-### List Servicr
+
+### List Service
 ### Borad Service
-
-## Entity model
-### Task
--	Task name 
--	Status
--	Assign member
--	ชั่วโมงที่จะใช้ในการทำงานนี้
--	Tag
--	Deadline
--	Department
--	*subtask
-
-### Member
--	Name
--	Surname
--	Role
--	Email
--	ชั่วโมงการทำงาน (นับจากที่รับงานต่อวัน)
--	Assign ชั่วโมงงานที่สามารถทำได้ต่อวัน
-### Topic
--	ความคิดเห็น
--	ชื่อผู้แสดงความคิดเห็น
+### Cards Service
+### checklist service
 
 
 
