@@ -34,8 +34,8 @@
 ### Cards Service
 ### checklist service
 
-
-
+### Endpoint
+https://primary:o4fyboEQcOv8e01c00tn7HHxq96dnTwd0zGlqSHu9ayXCg20EVQuxeXHSZswIZjP@azure-task-manager-sop.test.azuremicroservices.io/azure-gateway/default/
 
 ### Task Service
 
