@@ -1,5 +1,6 @@
 # Task-Management-Services
-
+## Presentation
+https://docs.google.com/presentation/d/1PUROzBlXKMql83RF7t3B_xGAvfOf9IDjSlwGehSLm5k/edit?usp=sharing
 ## Task Management Microservice Architecture
 <img src="Task Management Microservice Architecture.jpg" width ="85%">
 
@@ -31,7 +32,7 @@
 
 
 ### Endpoint
-https://primary:o4fyboEQcOv8e01c00tn7HHxq96dnTwd0zGlqSHu9ayXCg20EVQuxeXHSZswIZjP@azure-task-manager-sop.test.azuremicroservices.io/azure-gateway/default/
+https://azure-task-manager-sop-azure-gateway.azuremicroservices.io/{SERVICE-NAME}
 
 ### Task Service
 
