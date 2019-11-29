@@ -1,7 +1,8 @@
 # Task-Management-Services
-
+## Presentation
+https://docs.google.com/presentation/d/1PUROzBlXKMql83RF7t3B_xGAvfOf9IDjSlwGehSLm5k/edit?usp=sharing
 ## Task Management Microservice Architecture
-<img src="Task Management Microservice Architecture.svg" width ="45%">
+<img src="Task Management Microservice Architecture.jpg" width ="85%">
 
 ## Feature
 ### Task Service
@@ -28,33 +29,10 @@
 -	แสดงความคิดเห็นได้
 -	ลบความคิดเห็น
 -	แก้ไขความคิดเห็น
-### List Servicr
-### Borad Service
-
-## Entity model
-### Task
--	Task name 
--	Status
--	Assign member
--	ชั่วโมงที่จะใช้ในการทำงานนี้
--	Tag
--	Deadline
--	Department
--	*subtask
-
-### Member
--	Name
--	Surname
--	Role
--	Email
--	ชั่วโมงการทำงาน (นับจากที่รับงานต่อวัน)
--	Assign ชั่วโมงงานที่สามารถทำได้ต่อวัน
-### Topic
--	ความคิดเห็น
--	ชื่อผู้แสดงความคิดเห็น
 
 
-
+### Endpoint
+https://azure-task-manager-sop-azure-gateway.azuremicroservices.io/{SERVICE-NAME}
 
 ### Task Service
 
@@ -149,7 +127,7 @@
       "comments":[ 
          { 
             "id": "1",
-            "message":"sorry but i dont knowssssss",
+            "msg":"sorry but i dont knowssssss",
             "by":"somebody",
             "dateTime":"2019-11-23T04:22:57.339572 "
          }
@@ -169,7 +147,7 @@
       "comments":[ 
          { 
             "id": "1",
-            "message":"sorry but i dont knowssssss",
+            "msg":"sorry but i dont knowssssss",
             "by":"somebody",
             "dateTime":"2019-11-23T04:22:57.339572 "
          }
@@ -202,7 +180,7 @@
 - POST /topic/{issueID}/     => insert comment
  ```json
   { 
-            "message":"sorry but i dont knowssssss",
+            "msg":"sorry but i dont knowssssss",
             "by":"somebody",
             "dateTime":"2019-11-23T04:22:57.339572 "
          }
@@ -211,7 +189,7 @@
 - PUT /topic/{issueID}/{id}      => update specific comment
  ```json
   { 
-            "message":"sorry but i dont knowssssss",
+            "msg":"sorry but i dont knowssssss",
             "by":"somebody",
             "dateTime":"2019-11-23T04:22:57.339572 "
          }
@@ -220,7 +198,7 @@
 - GET /topic/{issueID}/{id}     => return secific comment
  ```json
   { 
-            "message":"sorry but i dont knowssssss",
+            "msg":"sorry but i dont knowssssss",
             "by":"somebody",
             "dateTime":"2019-11-23T04:22:57.339572 "
          }
