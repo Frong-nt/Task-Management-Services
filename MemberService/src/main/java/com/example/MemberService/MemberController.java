@@ -83,6 +83,7 @@ public class MemberController {
 
 	@RequestMapping(value = "/index")
 	public String FirstPage(Model model) {
+//		เป็นโครงไว้เชื่อมกับตัว login ของเพื่อน โดยการดึง ข้อมูลมาแล้วดูว่า คนนี้เคยใช้ service ไหม ถ้าไม่เคยจะทำการสร้าง Member ใหม่ขึ้นมา
 		String name = "pimlapat";
 		try {
 			if (memberService.search(name) == null) {
