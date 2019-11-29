@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thymeleaf</title>
+</head>
+<body>
+	<div align="center">
+		<h1>Create New member</h1>
+		<br />
+		<form action="#" th:action="@{/save}" th:object="${member}"
+			method="post">
+			<table border="0" cellpadding="10" >
+				<tr>
+					<td>first Name:</td>
+					<td><input type="text" th:field="*{firstname}" /></td>
+				</tr>
+				<tr>
+					<td>last Name:</td>
+					<td><input type="text" th:field="*{lastname}" /></td>
+				</tr>
+				<tr>
+					<td>role :</td>
+					<td><input type="text" th:field="*{role}" /></td>
+				</tr>
+				<tr>
+					<td>work hours(day):</td>
+					<td><input type="text" th:field="*{hours}" /></td>
+				</tr>
+				<tr>
+					<td>email Name:</td>
+					<td><input type="text" th:field="*{email}" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" >
+						<button type="submit">
+							Save
+						</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
