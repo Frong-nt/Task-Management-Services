@@ -32,16 +32,33 @@ https://docs.google.com/presentation/d/1PUROzBlXKMql83RF7t3B_xGAvfOf9IDjSlwGehSL
 
 
 ### Endpoint
-https://azure-task-manager-sop-azure-gateway.azuremicroservices.io/{SERVICE-NAME}
-
+https://azure-task-manager-sop-azure-gateway.azuremicroservices.io/{SERVICE-NAME}/
+- เช่น
+https://azure-task-manager-sop-azure-gateway.azuremicroservices.io/TASKS-SERVICE/boards/
 ### Task Service
+- GET /boards
+- PUT /boards/{id}
+- POST /boards
+- DELETE /boards/{id}
+- GET /lists
+- GET /lists/{id}
+- GET /boards/{idBoard}/lists
+- PUT /lists/{id}
+- DELETE /lists
+- DELETE /lists/{id}
+- DELETE /lists/all
+- GET /cards
+- GET /cards/{id}
+- PUT /cards/{id}
+- POST /cards
+- DELETE /cards/{id}
+- GET /checklists
+- GET /checkitem
+- PUT /checklist/{id}
+- POST /checklist
+- DELETE /checklist/all
+- DELETE /checklist/{id}
 
-```json
-{
-  "task": "String",
-  "status": true,
-}
-```
 
 ### Member Service
 - GET /member/{firstname} ==> return firstname in database 
