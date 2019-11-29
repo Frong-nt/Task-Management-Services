@@ -35,7 +35,7 @@ https://docs.google.com/presentation/d/1PUROzBlXKMql83RF7t3B_xGAvfOf9IDjSlwGehSL
 https://azure-task-manager-sop-azure-gateway.azuremicroservices.io/{SERVICE-NAME}/
 - เช่น
 https://azure-task-manager-sop-azure-gateway.azuremicroservices.io/TASKS-SERVICE/boards/
-### Task Service
+### Tasks Service
 - GET /boards
 - PUT /boards/{id}
 - POST /boards
