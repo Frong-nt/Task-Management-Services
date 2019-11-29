@@ -5,6 +5,7 @@ import lombok.Data;
 import java.util.*;
 @Data
 public class Comments {
+    private String id;
     private String msg, by, dateTime;
 
     public Comments(){}
@@ -12,6 +13,14 @@ public class Comments {
         this.msg = msg;
         this.by = by;
         this.dateTime = dateTime;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getMsg() {
